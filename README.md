@@ -16,6 +16,15 @@ Watch the walkthrough video demonstrating the functionality of the application:
 4. Follow the prompts to generate your logo.
 5. The logo will be saved as `logo.svg`.
 
+## Created by
+
+Tristin Rohr
+
+## Contact and Links
+
+- [Email](tristist@gmail.com)
+- [GitHub](https://github.com/TristinRohr)
+
 ## License
 
 MIT License

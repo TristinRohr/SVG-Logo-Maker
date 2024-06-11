@@ -6,7 +6,7 @@ This is a Node.js command-line application that generates a simple logo based on
 
 Watch the walkthrough video demonstrating the functionality of the application:
 
-[Walkthrough Video](your-video-link-here)
+[Walkthrough Video](/Users/tristinrohr/Desktop/SVG-Logo-Maker/SVG-Walkthrough.mov)
 
 ## Usage
 

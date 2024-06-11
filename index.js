@@ -55,8 +55,16 @@ function generateSVG(answers) {
 // Prompt the user with the questions, generate SVG content based on answers, and write to file
 inquirer.prompt(questions).then(answers => {
     const timestamp = new Date().toISOString().replace(/:/g, '-').replace(/\..+/, ''); // Generate a timestamp for unique filename
-    const fileName = `./Examples/logo_${timestamp}.svg`; // Construct a unique filename for the SVG file
+    const uniqueFileName = `./Examples/logo_${timestamp}.svg`; // Construct a unique filename for the SVG file
+    const latestFileName = `./Examples/logo.svg`; // Define the fixed filename for the latest SVG file
     const svgContent = generateSVG(answers); // Generate SVG content based on user answers
-    fs.writeFileSync(fileName, svgContent); // Write the SVG content to a file with a unique filename
-    console.log(`Generated ${fileName}`); // Log the filename of the generated SVG file
+
+    // Write the SVG content to the unique file with a timestamp
+    fs.writeFileSync(uniqueFileName, svgContent);
+    console.log(`Generated ${uniqueFileName}`); // Log the filename of the generated SVG file
+
+    // Write the SVG content to the fixed latest file
+    fs.writeFileSync(latestFileName, svgContent);
+    console.log(`Generated ${latestFileName}`); // Log the filename of the latest SVG file
 });
+
